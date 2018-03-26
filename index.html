@@ -46,8 +46,16 @@
 
     </div>
     <div class="content">
-        <h2>Get Started</h2>
-        <p> I'll be adding all my projects here soon! Stay tuned! </p>
+        <h2>Using a fine-tuned Alex-Net to classify Mammographies</h2>
+        <p> For the research lab one of the concepts they wanted to investigate more was the use of finetuned-CNN's in the medical imaging domain. For those of you who are not as familiar with the term fine-tuned CNN
+            this basically refers to the idea that except the last few layers of a CNN, the rest of the CNN is trained on ImageNet data. This is so that the CNN can learn general image features from a huge database without expending
+            resources or time to train a CNN from scratch. It also saves us the effort of having to do augmentations, blurring/cropping/rotation to have enough images in order to train CNN from scratch.
+            
+            Therefore finetuning can be extremely helpful and potentially have very good results. In a paper by Daniel Levy and Arzav Jain, linked here: , they were able to use a finetuned net to great success in 
+            classifying mammographies. Utilizing this as inspiration my post-doc started a project where we compare utilizing a random forest approach with PCA to classifying mammographies versus a finetuned CNN, particularly a alexnet.
+            I am still in the midst of this project and if you're interested you should check out the link to my classifer:. I didnt write the finetuning code for the alexnet since it was already available but feel free to use the classifer I wrote based off the implmentation in the description. Linked to Kratzert's finetuned Alex_net
+        
+        </p>
 
         <a href="https://github.com/Colhodm/Arjuns-Projects" class="yui3-button primary-button">View some of my projects on Github</a>
 
