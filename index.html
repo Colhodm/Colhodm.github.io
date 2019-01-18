@@ -1,103 +1,118 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Personify Personal/VCard Website Template</title>
     <meta charset="utf-8">
-    <title>Github Pages Template</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Combo with CSSNormalize, CSSGrids-Responsive, CSSForm, CSSTable, CSSList (v3.9.1) -->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?3.9.1/build/cssnormalize/cssnormalize-min.css&amp;3.9.1/build/cssgrids-responsive/cssgrids-responsive-min.css&amp;3.9.1/build/cssbutton/cssbutton-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csslist/gallerycss-csslist-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csstable/gallerycss-csstable-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
     
-    <!-- Some custom styles to make things pretty. -->
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/prettypages/gh-pages/ui.css">
+    <div class="site-wrap">
 
-    <!-- RainbowJS Syntax Highlighting - Github Theme. 
-         For more themes, go to https://github.com/ccampbell/rainbow/tree/master/themes -->
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/github.css">
+      <a href="#" class="offcanvas-toggle js-offcanvas-toggle">Menu</a>
+      <div class="offcanvas_menu" id="offcanvas_menu">
+        <ul class="mb-5">
+          <li class="active"><a href="index.html">Bio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-    <!-- Modify header colors here to customize the look and feel of the site-->
-    <style>
-        
-        .header {
-            background: rgb(53, 41, 116);
-         }
-            .header h1 {
-                color: white;
-            }
-             .header h2 {
-                 font-weight:300;
-                 margin:0;
-                 color: rgb(116, 130, 230);
-             }
-    </style>
+        <ul class="social">
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
 
-</head>
+</br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
-<body class='yui3-skin-sam'>
-
-    <div id="headerMenu" class="yui3-menu yui3-menu-open yui3-menu-horizontal yui3-menu-fixed">
-        <span class="yui3-menu-heading">PrettyPages</span>
-       
-    </div>
-    <div class="header yui3-u-1">
-
-        <h1 class="yui3-u-1">Welcome to my Home Page!</h1>
-        <h2 class="yui3-u">This is where I show off sick projects and cool stuff</h2>
-
-    </div>
-    <div class="content">
-        <h2>Using a fine-tuned Alex-Net to classify Mammographies</h2>
-        <p> For the research lab one of the concepts they wanted to investigate more was the use of finetuned-CNN's in the medical imaging domain. For those of you who are not as familiar with the term fine-tuned CNN
-            this basically refers to the idea that except the last few layers of a CNN, the rest of the CNN is trained on ImageNet data. This is so that the CNN can learn general image features from a huge database without expending
-            resources or time to train a CNN from scratch. It also saves us the effort of having to do augmentations, blurring/cropping/rotation to have enough images in order to train CNN from scratch.
-            
-            Therefore finetuning can be extremely helpful and potentially have very good results. In a paper by Daniel Levy and Arzav Jain, linked here: , they were able to use a finetuned net to great success in 
-            classifying mammographies. Utilizing this as inspiration my post-doc started a project where we compare utilizing a random forest approach with PCA to classifying mammographies versus a finetuned CNN, particularly a alexnet.
-            I am still in the midst of this project and if you're interested you should check out the link to my classifer:. I didnt write the finetuning code for the alexnet since it was already available but feel free to use the classifer I wrote based off the implmentation in the description. Linked to Kratzert's finetuned Alex_net
-        
-        </p>
-
-        <a href="https://github.com/Colhodm/Arjuns-Projects" class="yui3-button primary-button">View some of my projects on Github</a>
-
-        <h2>About</h2>
-        
-        <p>PrettyPages comes with a flat horizontal menu, where you can place links, and add the title of your project. This menu is responsive at lower screen sizes.</p>
-
-        <p>You can also add pretty code snippets that have syntax highlighting thanks to <a href="http://craig.is/making/rainbows">RainbowJS</a>! These come in a variety of different <a href="https://github.com/ccampbell/rainbow/tree/master/themes">themes</a>.</p>
-
-<pre><code data-language="javascript">
-    YUI().use('node', function(Y) {
-      Y.log('YUI Loaded. Vroom vroom!');
-    });
-
-</code></pre>
-
-        <p>You can also display nice looking buttons thanks to YUI's CSSButton module. Add the <code>.yui3-button</code> class to a <code>a</code> element to make a nice looking button, and add the <code>primary-button</code> class to make a really big callout button.</p>
-
-        <a class="yui3-button">Regular button</a>
-        <a class="yui3-button primary-button">This button will be sued soon</a>
-
-
-        <h2>More Content</h2>
-        <p>
-            In general, all your content should be placed inside a <code>div class="content"</code>. You can use <code>code</code> elements to highlight inline-code. If you want sub-headings, those are nicely styled too. 
-        </p>
-
-        <h3>A sub-heading</h3>
+      </div>
+      
+      <aside style="background-image: url(img/profile.jpg);"></aside>
+      <main>
+        <h1 class="mb-0">Hi, I'm Arjun Mishra</h1>
+        <div class="mb-5">
+        <p class="lead mb-3">Undergraduate at UC Berkeley &amp; Developer</p>
+        <p>I'm interested in everything from Data Engineering all the way to Networking and I love learning new things with respect to both Computer Science and the world as whole!</p>
+        <p>I love coding my own projects and right now I'm working on an app in swift native which should bring a new angle to the tradtional mold of marketplace applications.</p>
+        </div>
 
         <p>
-            Use <code>h3</code> for subheadings! If you want something smaller, you can go for an <code>h4</code>.
-        </p>
+          <a href="#" class="mr-2 mb-2">Twitter</a>
+          <a href="https://www.facebook.com/arjun.mishra.71" class="mr-2 mb-2">Facebook</a>
+          <a href="#" class="mr-2 mb-2">Instagram</a> 
+       </p>
+        <!-- <h2 class="mb-4 mt-5">Services</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="media custom-media  d-block">
+              <div class="icon mr-3"><span class="ion-android-cart"></span></div>
+              <div class="media-body">
+                <h3 class="mt-0"><a href="#">eCommerce Websites</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati totam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="media custom-media  d-block">
+              <div class="icon mr-3"><span class="ion-bonfire"></span></div>
+              <div class="media-body">
+                <h3 class="mt-0"><a href="#">Branding Identity </a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam.</p>
+              </div>
+            </div>
+          </div>
 
-        <h4>A sub-sub heading</h4>
-        <p>That's what an <code>h4</code> looks like.</p>
-
-
-        <!-- TYPEKIT -->
-        <script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/rainbow.min.js"></script>
-        <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/generic.js"></script>
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="media custom-media  d-block">
+              <div class="icon mr-3"><span class="ion-videocamera"></span></div>
+              <div class="media-body">
+                <h3 class="mt-0"><a href="#">Video Editing</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati totam.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="media custom-media  d-block">
+              <div class="icon mr-3"><span class="ion-cube"></span></div>
+              <div class="media-body">
+                <h3 class="mt-0"><a href="#">Web Applications </a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        
+      </main>
     </div>
-</body>
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
 </html>
